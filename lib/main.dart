@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'fl_fourtune'),
+      home: const MyHomePage(title: 'fl_fortune'),
     );
   }
 }
@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
+            SelectableText(
               _fortuneCookieText,
               style: Theme.of(context).textTheme.displayMedium,
             ),
